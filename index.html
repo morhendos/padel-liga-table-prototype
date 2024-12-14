@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Padel League Standings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: radial-gradient(circle at center, #00B5CC 0%, #006577 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .title {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .table-container {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 800px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        th {
+            background-color: #007D8C;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+
+        .player-cell {
+            font-weight: 500;
+            color: #007D8C;
+        }
+
+        tr:hover {
+            background-color: #f0f7fa;
+        }
+
+        .rank-1 {
+            background-color: rgba(0, 181, 204, 0.1) !important;
+            font-weight: bold;
+        }
+
+        .rank-2 {
+            background-color: rgba(0, 133, 153, 0.1) !important;
+        }
+
+        .rank-3 {
+            background-color: rgba(0, 51, 102, 0.1) !important;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        BATTLE PADEL
+    </div>
+    <div class="title">LEAGUE STANDINGS</div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>RANK</th>
+                    <th>PLAYER</th>
+                    <th>MATCHES</th>
+                    <th>WON</th>
+                    <th>LOST</th>
+                    <th>POINTS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="rank-1">
+                    <td>1</td>
+                    <td class="player-cell">Tom</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>15</td>
+                </tr>
+                <tr class="rank-2">
+                    <td>2</td>
+                    <td class="player-cell">Jeremy</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>12</td>
+                </tr>
+                <tr class="rank-3">
+                    <td>3</td>
+                    <td class="player-cell">Paulo</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="player-cell">Per</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        BATTLE PADEL LEAGUE 2024
+    </div>
+</body>
+</html>
